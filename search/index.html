@@ -1,79 +1,66 @@
 <!DOCTYPE html>
+
 <html>
-
 <head>
-    <meta charset=utf-8 />
-    <title>embed test</title>
-    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Tipue Search, a jQuery Site Search Plugin</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <style>
-        @charset "UTF-8";
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans:300|Source+Code+Pro" rel="stylesheet">
 
-    </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 
-    <div>
-        <form name="jksearch" action="http://www.google.com/search" method="get" onSubmit="jksitesearch(this)">
-
-            <p>Search JavaScript Kit:<br />
-                <input id="hiddenquery" type="hidden" name="q" />
-                <input name="qfront" type="text" style="width: 200px" value="navigator object" /> <input type="submit" value="Search" /><br />
-                <div style="font: bold 11px Verdana;">Google:<input name="se" type="radio" checked>  Yahoo:<input name="se" type="radio">  MSN:<input name="se" type="radio">
-                </div>
-
-                <script type="text/javascript">
-                    // All-in-one Internal Site Search script- By JavaScriptKit.com (http://www.javascriptkit.com)
-                    // For this and over 400+ free scripts, visit JavaScript Kit- http://www.javascriptkit.com/
-                    // This notice must stay intact for use
-
-                    //Enter domain of site to search.
-                    var domainroot = "www.javascriptkit.com"
-
-                    var searchaction = [ //form action for the 3 search engines
-                        "http://www.google.com/search"
-                    ]
-
-                    var queryfieldname = ["q", "p", "q"] //name of hidden query form for the 3 search engines
-
-                    function switchaction(cur, index) {
-                        cur.form.action = searchaction[index]
-                        document.getElementById("hiddenquery").name = queryfieldname[index]
-                    }
-
-                    function jksitesearch(curobj) {
-                        for (i = 0; i < document.jksearch.se.length; i++) { //loop through radio to see which is checked
-                            if (document.jksearch.se[i].checked == true)
-                                switchaction(document.jksearch.se[i], i)
-                        }
-                        document.getElementById("hiddenquery").value = "site:" + domainroot + " " + curobj.qfront.value
-                    }
-
-                </script>
-
-            </p>
-
-        </form>
-
-        <p style="font: normal 11px Arial">This free script provided by<br />
-            <a href="http://www.javascriptkit.com">JavaScript Kit</a></p>
-        <gcse:search></gcse:search>
-
-    </div>
-</head>
-
-<body>
+<link rel="stylesheet" href="inc/standard.css">
+<link rel="stylesheet" href="inc/gridism.css">
 
 
-    <!-- Search -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-dateFormat/1.0/jquery.dateFormat.js"></script>
-    <script>
+</head><body>
 
+<div class="cont">
 
-    </script>
+<div id="head"><a href="http://www.tipue.com"><div class="head-icon"><img src="img/head.png" style="width: 32px; height: 32px;" alt="Tipue"></div></a></div>
+
+<div class="head head-12">
+<div class="block" style="padding-top: 70px;">
+<h1 class="fa-5">Tipue Search, a jQuery Site Search Plugin</h1>
+<div class="fo-4 fa-6" style="padding-top: 21px">Version 7.0</div>
+</div></div>
+
+<div class="wrap"><div style="padding: 39px 0">
+
+<div class="grid">
+<div class="unit whole">
+<div class="fo-5">Tipue Search is a site search jQuery plugin. It's free, open source, responsive and fast. Tipue Search only needs a browser that supports jQuery. It doesn't need MySQL or similar. It doesn't even need a web server.</div>
+</div></div>
+
+<div style="padding-top: 7px;">
+<div class="grid">
+<div class="unit whole">
+<div class="fo-7">
+<a href="http://www.tipue.com/search/">Tipue Search</a> is released under the MIT License. It's free for both commercial and non-commercial use.
+<p>
+Tipue Search has full and expansive <a href="http://www.tipue.com/search/help/">Help</a>. We also offer a range of flexible <a href="http://www.tipue.com/support/">support</a> plans, including free.
+</div></div>
+
+</div></div>
+
+<div style="padding-top: 3px;">
+<div class="grid">
+<div class="unit whole">
+<a href="demo/index.html" class="btn-2">Demo</a>
+</div></div></div>
+
+</div></div>
+
+</div>
+
+<footer class="foot">
+<div class="wrap wider"><div class="grid" style="padding-top: 20px;"><div class="unit whole"><div class="fo-1"><a href="http://www.tipue.com">Tipue</a> is a small web development studio based in North London.<p>&copy; 2018 Tipue. Est London.</div>
+</div></div></div>
+</div>
+
 
 </body>
-
 </html>
