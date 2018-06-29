@@ -1,6 +1,6 @@
 
 var tipuesearch = {"pages": [
-     {"title": "Tipue", "text": "Tipue is a small web development studio based in North London.", "url": "http://www.tipue.com"}, 
+     {"title": "Economy", "text": "Economy is about jobs and money and how to create jobs so people can have more money. I like money because it can be exchanged for goods and services.", "url": "https://guide-dcp.opendata.arcgis.com", "tags": "jobs, money, economy"}, 
      {"title": "Tipue Search, a jQuery Site Search Plugin", "text": "Tipue Search is a site search jQuery plugin. It's free, open source, responsive and fast. Tipue Search only needs a browser that supports jQuery. It doesn't need MySQL or similar. It doesn't even need a web server.", "img": "http://www.tipue.com/img/surface.jpg", "tags": "JavaScript", "url": "http://www.tipue.com/search"},
      {"title": "Tipue Search Help", "text": "Tipue Search help. Tipue Search is a site search jQuery plugin. It's free, open source, responsive and fast. What is Tipue Search? Getting Started. Using Tipue Search. Options.", "img": "http://www.tipue.com/img/elvis.jpg", "url": "http://www.tipue.com/search/help"},
      {"title": "Tipue Search demo", "text": "Tipue Search demo. Try searching for Tipue.", "url": "http://www.tipue.com/search/demo"},
