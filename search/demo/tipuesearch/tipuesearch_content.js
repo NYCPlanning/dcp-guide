@@ -1,10 +1,6 @@
 var tipuesearch = {
     "pages": [
-        {
-            "title": "Economy",
-            "text": "Economy is about money and jobs and jobs that make money. I like money because it can be exchanged for goods and services.",
-            "url": "http://guide-dcp.opendata.arcgis.com/pages/economy"
-        },
+         {"title": "Economy", "text": "Economy is about jobs and money and how to create jobs so people can have more money. I like money because it can be exchanged for goods and services.", "url": "https://guide-dcp.opendata.arcgis.com", "tags": "jobs, money, economy"},
         {
             "title": "Tipue Search, a jQuery Site Search Plugin",
             "text": "blah blah blah",
