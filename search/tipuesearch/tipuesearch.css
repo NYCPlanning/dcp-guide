@@ -97,6 +97,11 @@ http://www.tipue.com/search
     color: #a7501d;
 }
 
+.tipue_search_content_url a:visited {
+    color: #a7501d;
+    text-decoration: none;
+}
+
 .tipue_search_content_bold {
     font-weight: 400;
     color: #333;
