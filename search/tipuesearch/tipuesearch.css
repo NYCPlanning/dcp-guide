@@ -66,7 +66,7 @@ http://www.tipue.com/search
 }
 
 .tipue_search_content_title {
-    font: 300 22px 'Nunito Sans', sans-serif;
+    font: 300 18px 'Nunito Sans', sans-serif;
     color: #4c4c4c;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -246,12 +246,14 @@ http://www.tipue.com/search
 }
 
 .tipue_search_content_url {
+    font-size: 14px;
     padding-top: 3px;
     word-wrap: break-word;
     hyphens: auto;
 }
 
 .tipue_search_content_text {
+    font-size: 14px;
     word-wrap: break-word;
     hyphens: auto;
     margin-top: 1px;
