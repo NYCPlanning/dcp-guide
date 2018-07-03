@@ -205,12 +205,12 @@ http://www.tipue.com/search
 }
 
 .tipue_search_result {
-    padding-top: 21px;
+    padding-top: 20px;
 }
 
 #tipue_search_results_count {
     float: right;
-    padding-top: 9px;
+    padding-top: 4px;
 }
 
 .tipue_search_related {
@@ -247,7 +247,7 @@ http://www.tipue.com/search
 
 .tipue_search_content_url {
     font-size: 14px;
-    padding-top: 3px;
+    padding-top: 0;
     word-wrap: break-word;
     hyphens: auto;
 }
