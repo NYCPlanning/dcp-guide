@@ -88,7 +88,7 @@ var tipuesearch = {
             "title": "Land Use &amp; Zoning - Mapping &amp; Analytical Tools",
             "text": "ZoLa: ZoLa is New York City's land use and zoning map. Research zoning districts and overlays, development incentive programs, environmental protection requirements, and other regulations that shape development in NYC.",
             "tags": "",
-            "url": "https://guide-dcp.opendata.arcgis.com/pages/"
+            "url": "https://guide-dcp.opendata.arcgis.com/pages/land-use-zoning"
         },
         {
             "title": "Waterfront &amp; Resiliency - Spotlight",
