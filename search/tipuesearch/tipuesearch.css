@@ -209,6 +209,7 @@ http://www.tipue.com/search
 }
 
 #tipue_search_results_count {
+    float: right;
     padding-top: 9px;
 }
 
@@ -347,16 +348,23 @@ http://www.tipue.com/search
 
 #tipue_search_foot_boxes li a {
     padding: 10px 17px 11px 17px;
-    border-radius: 3px;
+    border-radius: 0;
     margin-right: 7px;
     text-decoration: none;
     text-align: center;
     transition: 0.2s;
 }
 
+#tipue_search_foot_boxes li a:hover {
+    background-color: #da6a27;
+    color: #fff;
+}
+
 #tipue_search_foot_boxes li.current {
+    background-color: #da6a27;
+    color: #fff;
     padding: 10px 17px 11px 17px;
-    border-radius: 3px;
+    border-radius: 0;
     margin-right: 7px;
     text-align: center;
 }
