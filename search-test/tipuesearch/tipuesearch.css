@@ -160,7 +160,7 @@ http://www.tipue.com/search
 
 @font-face {
     font-family: "Avenir Next";
-    src: url("/font/AvenirNextLTPro-Regular.woff") format("woff");
+    src: url("font/AvenirNextLTPro-Regular.woff") format("woff");
 }
 
 .intro-graf {
