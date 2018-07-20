@@ -20,14 +20,14 @@ http://www.tipue.com/search
 /* fonts, colors */
 
 #tipue_search_input {
-    font: 14px 'Nunito Sans', sans-serif;
+    font: 14px 'Avenir Next', sans-serif;
     color: #4c4c4c;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 .tipue_search_icon {
-    font: 300 24px/1 'Nunito Sans', sans-serif;
+    font: 300 24px/1 'Avenir Next', sans-serif;
     color: #fff;
 }
 
@@ -44,7 +44,7 @@ http://www.tipue.com/search
 #tipue_search_replace,
 #tipue_search_error,
 .tipue_search_content_text {
-    font: 300 14px 'Nunito Sans', sans-serif;
+    font: 300 14px 'Avenir Next', sans-serif;
     color: #666;
 }
 
@@ -66,7 +66,7 @@ http://www.tipue.com/search
 }
 
 .tipue_search_content_title {
-    font: 300 18px 'Nunito Sans', sans-serif;
+    font: 300 18px 'Avenir Next', sans-serif;
     color: #4c4c4c;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -84,7 +84,7 @@ http://www.tipue.com/search
 
 .tipue_search_content_url,
 .tipue_search_content_debug {
-    font: 300 15px/1.7 'Nunito Sans', sans-serif;
+    font: 300 15px/1.7 'Avenir Next', sans-serif;
     color: #4c4c4c;
 }
 
@@ -154,6 +154,17 @@ http://www.tipue.com/search
 .tipue_search_related_btn:hover {
     background: #252525;
     color: #ccc;
+}
+
+/* paragraph */
+
+@font-face {
+    font-family: "Avenir Next";
+    src: url("/font/AvenirNextLTPro-Regular.woff") format("woff");
+}
+
+.intro-graf {
+    font: 14px 'Avenir Next', sans-serif;
 }
 
 
