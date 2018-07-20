@@ -16,7 +16,7 @@ http://www.tipue.com/search
             'contextLength': 60,
             'contextStart': 90,
             'debug': false,
-            'descriptiveWords': 25,
+            'descriptiveWords': 20,
             'footerPages': 3,
             'highlightTerms': true,
             'imageZoom': true,
