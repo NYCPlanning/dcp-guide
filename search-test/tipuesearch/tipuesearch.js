@@ -24,7 +24,7 @@ http://www.tipue.com/search
             'newWindow': false,
             'show': 10,
             'showContext': true,
-            'showRelated': true,
+            'showRelated': false,
             'showTime': false,
             'showTitleCount': true,
             'showURL': true,
