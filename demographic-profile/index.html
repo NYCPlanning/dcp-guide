@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>DCP Demographic Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js"></script>
+
+    <style>
+        .galleria {
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            height: 100%;
+            width: 100%;
+        }
+
+        .galleria-container {
+            background-color: #fff;
+        }
+
+        body .galleria-lightbox-shadow {
+            background-color: #fff;
+        }
+
+        .galleria-theme-classic .galleria-thumbnails .galleria-image {
+            border: 1px solid #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="galleria" class="galleria">
+        <img src="./images/Slide1.JPG">
+        <img src="./images/Slide2.JPG">
+        <img src="./images/Slide3.JPG">
+        <img src="./images/Slide4.JPG">
+        <img src="./images/Slide5.JPG">
+        <img src="./images/Slide6.JPG">
+    </div>
+    <script>
+        (function() {
+            Galleria.loadTheme("https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/themes/classic/galleria.classic.min.js");
+            Galleria.configure({
+                transition: 'fade',
+                imageCrop: false,
+                lightbox: true,
+                overlayBackground: '#fff'
+            });
+            Galleria.run();
+        }());
+    </script>
+</body>
+
+</html>
