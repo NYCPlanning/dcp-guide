@@ -347,7 +347,7 @@
     <script>
         $(function() {
             var $content = $("#jsonContent");
-            $.get("https://home-api.planninglabs.nyc/posts?tag=data", function(response) {
+            $.get("https://home-api.planninglabs.nyc/posts", function(response) {
                 var output = "";
                 $.each(response.items, function(k, item) {
                     var visibleSm;
