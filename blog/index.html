@@ -5,7 +5,6 @@
     <meta charset=utf-8 />
     <title>embed test</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
@@ -348,7 +347,7 @@
     <script>
         $(function() {
             var $content = $("#jsonContent");
-            $.get("https://home-api.planninglabs.nyc/posts?tag=nyc-planning-labs", function(response) {
+            $.get("https://home-api.planninglabs.nyc/posts?tag=data", function(response) {
                 var output = "";
                 $.each(response.items, function(k, item) {
                     var visibleSm;
@@ -365,7 +364,11 @@
                         $.format.date(item.created, "dd<br>MMM") +
                         "</h5>";
                     
-                    var src = item.image
+                    if (item.image == undefined) {
+                    	var src = 'https://github.com/DCPPlanningCoordination/dcp-guide/blob/master/images/dcp-logo-orange.png?raw=true'
+                    } else {
+                    	var src = item.image
+                    }
                     output +=
                         '<div class="blog-element"><img class="img-responsive" src="' +
                         src +
