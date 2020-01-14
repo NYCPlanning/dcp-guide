@@ -347,7 +347,7 @@
     <script>
         $(function() {
             var $content = $("#jsonContent");
-            $.get("http://labs-home-api.herokuapp.com/posts?limit=6", function(response) {
+            $.get("https://labs-home-api.herokuapp.com/posts?limit=6", function(response) {
                 var output = "";
                 $.each(response.items, function(k, item) {
                     var visibleSm;
