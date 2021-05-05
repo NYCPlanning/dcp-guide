@@ -347,7 +347,7 @@
     <script>
         $(function() {
             var $content = $("#jsonContent");
-            $.get("https://labs-home-api.herokuapp.com/posts?limit=6", function(response) {
+            $.get("http://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/nyc-planning-digital?limit=6", function(response) {
                 var output = "";
                 $.each(response.items, function(k, item) {
                     var visibleSm;
@@ -361,13 +361,13 @@
 
                     output +=
                         '<h5 class="date">' +
-                        $.format.date(item.created, "dd<br>MMM") +
+                        $.format.date(item.pubDate, "dd<br>MMM") +
                         "</h5>";
                     
-                    if (item.image == undefined) {
+                    if (item.thumbnail == undefined) {
                     	var src = 'https://github.com/DCPPlanningCoordination/dcp-guide/blob/master/images/dcp-logo-orange.png?raw=true'
                     } else {
-                    	var src = item.image
+                    	var src = item.thumbnail
                     }
                     output +=
                         '<div class="blog-element"><img class="img-responsive" src="' +
@@ -379,6 +379,7 @@
                         '" target="_blank">' +
                         item.title +
                         "</a></h4></div></div>";
+
                     var description = item.description
                     var maxLength = 180; // maximum number of characters to extract
                     //trim the string to the maximum length
@@ -388,6 +389,27 @@
                         0,
                         Math.min(trimmedString.length, trimmedString.lastIndexOf(" "))
                     );
+                    // strip newlines and embedded figures
+                    var trimmedString = trimmedString.replace(/\n/g, "");
+                    var fig_beg = trimmedString.indexOf("<figure>");
+                    var fig_end = trimmedString.indexOf("<figcaption>");
+                    var trimmedString = trimmedString.replace(trimmedString.slice(fig_beg, fig_end), "");
+                    
+                    // strip headers
+                    var headArray = ['<h1>', '<h2>', '<h3>', '<h4>', '<h5>', '<h6>', '</h1>', '</h2>', '</h3>', '</h4>', '</h5>', '</h6>']
+
+                    var indexArray = []
+
+                    for (var i = 0; i < headArray.length; i++)
+                        if (trimmedString.indexOf(headArray[i]) !== -1) {
+                            indexArray.push(trimmedString.indexOf(headArray[i]));
+                        } else {}
+
+                    for (var i = 0; i < indexArray.length; i++)
+                        if (indexArray[i+1] > 0) {
+                            trimmedString = trimmedString.replace(trimmedString.slice(indexArray[0], indexArray[1]), "");
+                        } else {}
+
                     output += "<p>" + trimmedString + "...</p>";
                     output += "</div></div></div>";
                     return k < 5;
