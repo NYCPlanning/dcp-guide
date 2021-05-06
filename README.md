@@ -1,4 +1,2 @@
 # DCP Guide to Planning Resources
-This repository stores files that will be included in the DCP Guide to Planning Resources, which is in development using [Esri's Hub](http://hub.arcgis.com) architecture.
-
-Icons by [Icons8](https://icons8.com/)
+This repository stores files that will be included in the DCP Guide to Planning Resources which is currently hosted using [SharePoint](https://www.microsoft.com/en-us/microsoft-365/sharepoint/collaboration) and allows members of various divisions/units to update their respective pages with new projects/initiatives and tools.
